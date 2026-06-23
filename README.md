@@ -12,7 +12,9 @@ Krea 2 - image generation model from [Krea](https://krea.ai).
 
 <img src="assets/k2.png" alt="k2 banner">
 
-This is the official repostiroy for open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains minimal inference code and instructions to run the model.
+This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model.
+
+Krea 2 is the most aesthetic open-source image model available. On quality, Krea 2 is the #1 text-to-image model from an independent lab on Artificial Analysis.
 
 Krea 2 ships as two models. Krea 2 RAW is the base model. It's a pretrained checkpoint with no distillation, so it's diverse and highly malleable, and it's what you should use for fine-tuning, post-training, and LoRA training. Krea 2 Turbo is an 8-step distilled checkpoint built for fast, high-quality text-to-image.
 
@@ -80,7 +82,7 @@ uv run inference.py "a fox walking in the snow" \
 ## Finetuning Krea 2
 
 For finetuning Krea 2, we highly recommend that you **train a LoRA on the Raw model and apply it to the Turbo model** for inference.
-We recommend using the following providers and open source tools for finetuning Krea 2
+We recommend using the following providers and open source tools for finetuning Krea 2.
 
 - [Huggingface Diffusers](https://github.com/huggingface/diffusers)
 - [Ostris AI toolkit](https://github.com/ostris/ai-toolkit)
